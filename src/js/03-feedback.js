@@ -28,7 +28,8 @@ window.onload = event => {
     emailForm.value = loadForm.email;
     textForm.value = loadForm.text;
   } catch (err) {
-    loadForm = [];
+      console.log(err);
+    loadForm = {};
   }
 };
 
