@@ -23,8 +23,9 @@ form.addEventListener(
 );
 
 window.onload = event => {
+  let loadForm = {};
   try {
-    let loadForm = JSON.parse(localStorage.getItem('feedback-form-state'));
+    loadForm = JSON.parse(localStorage.getItem('feedback-form-state'));
     emailForm.value = loadForm.email;
     textForm.value = loadForm.text;
   } catch (err) {
